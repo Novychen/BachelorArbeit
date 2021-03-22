@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- MOTION LAYOUT
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/anim_layout"
+    tools:context=".MainActivity" >
+    <!-- app:layoutDescription="@xml/activity_main_scene"> -->
+
+    <!-- VECTOR DRAWABLE
+    <ImageView
+        android:id="@+id/anim_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_view_text" />
+    -->
+
+    <!-- ANIMATION DRAWABLE-->
+    <ImageView
+        android:id="@+id/anim_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_view_text" />
+
+
+    <!-- GIF
+    <WebView
+        android:id="@+id/anim_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_view_text" />
+    -->
+
+    <!-- LOTTIE
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_view_text"
+        app:lottie_rawRes="@raw/ic_animation" />
+
+      <com.airbnb.lottie.LottieAnimationView
+         android:id="@+id/anim_view"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_marginBottom="32dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/anim_view_text"
+         app:lottie_rawRes="@raw/idle_animation" />
+    -->
+
+    <TextView
+        android:id="@+id/anim_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Animation View"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/anim_view"
+        app:layout_constraintStart_toStartOf="@+id/anim_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/anim_customize_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Customized Value"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/anim_view"
+        app:layout_constraintStart_toStartOf="@+id/anim_view"
+        app:layout_constraintTop_toBottomOf="@+id/anim_view" />
+
+    <EditText
+        android:id="@+id/anim_customize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/anim_customize_text"
+        app:layout_constraintStart_toStartOf="@+id/anim_customize_text"
+        app:layout_constraintTop_toBottomOf="@+id/anim_customize_text" />
+
+    <TextView
+        android:id="@+id/anim_interactive_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Interactive Progress"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/anim_customize"
+        app:layout_constraintStart_toStartOf="@+id/anim_customize"
+        app:layout_constraintTop_toBottomOf="@+id/anim_customize" />
+
+    <SeekBar
+        android:id="@+id/anim_interactive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_interactive_text" />
+
+    <TextView
+        android:id="@+id/anim_layout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Layout Animation"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/anim_customize"
+        app:layout_constraintStart_toStartOf="@+id/anim_customize"
+        app:layout_constraintTop_toBottomOf="@+id/anim_interactive" />
+
+    <ImageView
+        android:id="@+id/anim_layout_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_layout_text"
+        app:srcCompat="@drawable/ic_android" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/anim_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/anim_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        app:layout_constraintBottom_toTopOf="@+id/anim_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/anim_guideline" />
+
+    <!-- MOTION LAYOUT, ANIMATION, PROPERTY ANIMATION
+    <ImageView
+        android:id="@+id/anim_motion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/anim_view"
+        app:layout_constraintTop_toTopOf="@+id/anim_view"
+        app:srcCompat="@drawable/ic_motion_layout_circle" />
+
+    <ImageView
+        android:id="@+id/anim_motion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/anim_view"
+        app:layout_constraintStart_toStartOf="@+id/anim_view"
+        app:layout_constraintTop_toTopOf="@+id/anim_view"
+        app:srcCompat="@drawable/ic_motion_layout_circle" />
+
+    <ImageView
+        android:id="@+id/anim_motion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/anim_view"
+        app:layout_constraintTop_toTopOf="@+id/anim_view"
+        app:srcCompat="@drawable/ic_motion_layout_circle" />
+    -->
+<!-- </androidx.constraintlayout.motion.widget.MotionLayout> -->
+</androidx.constraintlayout.widget.ConstraintLayout>
